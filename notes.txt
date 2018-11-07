@@ -1,0 +1,895 @@
+#########
+# Step 1
+
+Code affected: none
+
+Created this file.
+
+#########
+# Step 2
+
+Code affected: all .java files
+
+Reformatted using the Google Java style formatter.
+
+#########
+# Step 3
+
+Code affected: Pig.turnAround
+
+Flaw: unnecessary if, leading to duplicate code.
+
+Fix: replaced if statement with a single assignment statement.
+
+#########
+# Step 4
+
+Code affected: Main.start
+
+Flaw: inconsistent coordinate values found in position setup.
+
+Fix: made all coordinate values consistent.
+
+#########
+# Step 5
+
+Code affected: Main.start, Main.drawShapes
+
+Flaw: duplicate hard-coded values of dimensions of canvas.
+
+Fix: dimensions extracted as class fields.
+
+#########
+# Step 6
+
+Code affected: Main.start, Main.drawShapes
+
+Flaw: unnecessary castings.
+
+Fix: removed all unnecessary castings.
+
+#########
+# Step 7
+
+Code affected: AnimalFood.blownUp, .blownDown, .blownLeft, .blownRight
+
+Flaw: unnecessary self-assignments.
+
+Fix: commented out all unnecessary self-assignments.
+
+#########
+# Step 8
+
+Code affected: AnimalFood
+
+Flaw: bad visibility modifiers for fields and methods
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 9
+
+Code affected: Chicken
+
+Flaw: bad visibility modifiers for fields and methods
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 10
+
+Code affected: Chicken.move
+
+Flaw: misused variables.
+
+Fix: fixed all misused variables.
+
+#########
+# Step 11
+
+Code affected: Chicken.reverseAppearance
+
+Flaw: string concatenation in loop is slow and will consume more memory.
+
+Fix: replaced string concatenation with StringBuilder.
+
+#########
+# Step 12
+
+Code affected: Pig.reverseAppearance
+
+Flaw: string concatenation in loop is slow and will consume more memory.
+
+Fix: replaced string concatenation with StringBuilder.
+
+#########
+# Step 13
+
+Code affected: Pig
+
+Flaw: bad visibility modifiers for fields and methods
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 14
+
+Code affected: Egg
+
+Flaw: bad visibility modifiers for fields and methods.
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 15
+
+Code affected: ANIMAL_MANURE
+
+Flaw: bad visibility modifiers for fields and methods.
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 16
+
+Code affected: ANIMAL_MANURE
+
+Flaw: unused variable.
+
+Fix: removed unused variable.
+
+#########
+# Step 17
+
+Code affected: ANIMAL_MANURE.setLocation
+
+Flaw: bad argument names.
+
+Fix: corrected bad argument names.
+
+#########
+# Step 18
+
+Code affected: AnimalFood.setLocation
+
+Flaw: bad argument names.
+
+Fix: corrected bad argument names.
+
+#########
+# Step 19
+
+Code affected: Chicken.setLocation, Egg.setLocation
+
+Flaw: bad argument names.
+
+Fix: corrected bad argument names.
+
+#########
+# Step 20
+
+Code affected: Human.setLocation, Pig.setLocation
+
+Flaw: bad argument names.
+
+Fix: corrected bad argument names.
+
+#########
+# Step 21
+
+Code affected: Wind.windBlowingUp, Wind.windBlowingLeft
+
+Flaw: duplicate code: multiple returns.
+
+Fix: removed all redundant returns.
+
+#########
+# Step 22
+
+Code affected: Pig.clearStomach
+
+Flaw: bad return type.
+
+Fix: changed return type to void.
+
+#########
+# Step 23
+
+Code affected: Pig.clearStomach
+
+Flaw: inappropriate method name.
+
+Fix: changed 'clearStomach' to 'digest'.
+
+#########
+# Step 24
+
+Code affected: Chicken.digest
+
+Flaw: bad return type.
+
+Fix: changed return type to void.
+
+#########
+# Step 25
+
+Code affected: Egg.getY, Human.move
+
+Flaw: insufficient encapsulation.
+
+Fix: change field access modifier and add new 'getter'.
+
+#########
+# Step 26
+
+Code affected: Human
+
+Flaw: bad visibility modifiers for fields and methods.
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 27
+
+Code affected: Human.move
+
+Flaw: unnecessary multiplication computation.
+
+Fix: removed unnecessary multiplication computation.
+
+#########
+# Step 28
+
+Code affected: Creature
+
+Flaw: missing abstraction of all creatures.
+
+Fix: created Creature class as the abstract layer.
+
+#########
+# Step 29
+
+Code affected: Creature
+
+Flaw: incomplete abstraction class.
+
+Fix: added more fields and methods into class.
+
+#########
+# Step 30
+
+Code affected: Creature, Pig, Main.start
+
+Flaw: missing abstraction for Pig class.
+
+Fix: made 'Pig' inherit from 'Creature'.
+
+#########
+# Step 31
+
+Code affected: Chicken, Main.start
+
+Flaw: missing abstraction for Chicken class.
+
+Fix: made 'Chicken' inherit from 'Creature'.
+
+#########
+# Step 32
+
+Code affected: Egg, Chicken.layEgg
+
+Flaw: missing abstraction for Egg class.
+
+Fix: made 'Egg' inherit from 'Creature'.
+
+#########
+# Step 33
+
+Code affected: Egg, Chicken.layEgg
+
+Flaw: grid width & height of Egg set as zero incorrectly.
+
+Fix: passed grid width & height from 'Chicken' to 'Egg'.
+
+#########
+# Step 34
+
+Code affected: Chicken.move
+
+Flaw: redundant variables to contain generated temporary random values.
+
+Fix: used generated random values directly.
+
+#########
+# Step 35
+
+Code affected: Chicken.layEgg
+
+Flaw: redundant variables.
+
+Fix: got rid of redundant variables.
+
+#########
+# Step 36
+
+Code affected: Main, AnimalManure, Chicken, Pig
+
+Flaw: did not comply with convention to name class.
+
+Fix: changed class name from 'ANIMAL_MANURE' to 'AnimalManure'.
+
+#########
+# Step 37
+
+Code affected: AnimalManure, Chicken.digest, Pig.digest
+
+Flaw: missing abstraction for AnimalManure class.
+
+Fix: made 'AnimalManure' inherit from 'Creature'.
+
+#########
+# Step 38
+
+Code affected: Main.start, AnimalFood
+
+Flaw: missing abstraction for AnimalFood class.
+
+Fix: made 'AnimalFood' inherit from 'Creature'.
+
+#########
+# Step 39
+
+Code affected: Human, Main.start
+
+Flaw: missing abstraction for Human class.
+
+Fix: made 'Human' inherit from 'Creature'.
+
+#########
+# Step 40
+
+Code affected: Human
+
+Flaw: unused field.
+
+Fix: removed unused field.
+
+#########
+# Step 41
+
+Code affected: Chicken.aneggishere Human.aneggishere
+
+Flaw: misplaced method.
+
+Fix: moved method 'aneggishere' from 'Chicken' to 'Human'.
+
+#########
+# Step 42
+
+Code affected: Human.aneggishere
+
+Flaw: inappropriate static modifier.
+
+Fix: dropped the inappropriate static modifier.
+
+#########
+# Step 43
+
+Code affected: Main, AnimalFood, AnimalManure, Chicken, Creature, Egg, Human, Pig
+
+Flaw: weak constructors.
+
+Fix: combined the functionality of 'setLocation' into constructor.
+
+#########
+# Step 44
+
+Code affected: Main, AnimalFood, AnimalManure, Chicken, Creature, Egg, Human, Pig
+
+Flaw: bad capsulation for farm 2d array.
+
+Fix: moved farm 2d array from 'Human' to 'Main'.
+
+#########
+# Step 45
+
+Code affected: AnimalFood.blownUp, .blownDown, .blownLeft, .blownRight
+
+Flaw: indices may be out of bound of array.
+
+Fix: limited indices.
+
+#########
+# Step 46
+
+Code affected: Human.move, Pig.move
+
+Flaw: redundant variables to contain generated temporary random values.
+
+Fix: used generated random values directly.
+
+#########
+# Step 47
+
+Code affected: Chicken, Creature, Human, Pig
+
+Flaw: duplicate field and method.
+
+Fix: abstracted the duplicate field 'goingRight' and method 'turnAround' into 'Creature'.
+
+#########
+# Step 48
+
+Code affected: Pig.move
+
+Flaw: indices may be out of bound of array.
+
+Fix: limited indices.
+
+#########
+# Step 49
+
+Code affected: Chicken.move
+
+Flaw: indices may be out of bound of array.
+
+Fix: limited indices.
+
+#########
+# Step 50
+
+Code affected: Human.dropFood
+
+Flaw: indices may be out of bound of array.
+
+Fix: limited indices.
+
+#########
+# Step 51
+
+Code affected: Human.move
+
+Flaw: indices may be out of bound of array.
+
+Fix: limited indices.
+
+#########
+# Step 52
+
+Code affected: Main
+
+Flaw: bad visibility modifiers for fields and methods.
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 53
+
+Code affected: Main
+
+Flaw: bad names for fields.
+
+Fix: replaced bad names of fields.
+
+#########
+# Step 54
+
+Code affected: Main.start
+
+Flaw: unused if-condition branch.
+
+Fix: removed unused if-condition branch.
+
+#########
+# Step 55
+
+Code affected: Main.start
+
+Flaw: bloated code: anonymous new EventHandler<ActionEvent>().
+
+Fix: converted anonymous new EventHandler<ActionEvent>() to lambda expression.
+
+#########
+# Step 56
+
+Code affected: Main.start
+
+Flaw: bad variables names.
+
+Fix: changed bad variables names.
+
+#########
+# Step 57
+
+Code affected: Main.start. AnimalFood.blown
+
+Flaw: bad capsulation for 'food blown by wind' logic.
+
+Fix: moved this logic into 'AnimalFood' as a method.
+
+#########
+# Step 58
+
+Code affected: AnimalFood.blownUp, .blownDown, blownLeft, blownRight
+
+Flaw: lazy methods, one-liner method from 'blown series'.
+
+Fix: combine all lazy methods into one.
+
+#########
+# Step 59
+
+Code affected: Main.start, Main.drawShapes
+
+Flaw: multiple loops over a sparse (nearly-empty) 2D array.
+
+Fix: determined to draw object right after move (only loop once).
+
+#########
+# Step 60
+
+Code affected: Main.start, Main.drawShapes
+
+Flaw: abstract class could be utilized.
+
+Fix: used abstract class to replace if-condition statements.
+
+#########
+# Step 61
+
+Code affected: Human.dropFood
+
+Flaw: bad names for local variable.
+
+Fix: changed bad names.
+
+#########
+# Step 62
+
+Code affected: Human.dropFood
+
+Flaw: redundant local variable.
+
+Fix: removed redundant local variable.
+
+#########
+# Step 63
+
+Code affected: Human.dropFood
+
+Flaw: memory leak: drop food to non-null grid.
+
+Fix: determined to drop food to null grid only.
+
+#########
+# Step 64
+
+Code affected: Human.move
+
+Flaw: unnecessary graphic context draw operation.
+
+Fix: got rid of the unnecessary graphic context draw operation.
+
+#########
+# Step 65
+
+Code affected: Human.move
+
+Flaw: unnecessary class level variable.
+
+Fix: moved it into method as local variable.
+
+#########
+# Step 66
+
+Code affected: Human
+
+Flaw: type argument could be inferred.
+
+Fix: removed type argument.
+
+#########
+# Step 67
+
+Code affected: Human.aneggishere
+
+Flaw: bad name for method.
+
+Fix: changed the bad name.
+
+#########
+# Step 68
+
+Code affected: Human.move
+
+Flaw: redundant assignment statement.
+
+Fix: removed that statement.
+
+#########
+# Step 69
+
+Code affected: Main, Chicken, Human, Pig
+
+Flaw: ineffective sparse 2D array and overlaying impossible.
+
+Fix: used ArrayList per item instead of overall 2D array.
+
+#########
+# Step 70
+
+Code affected: Main.start
+
+Flaw: missing 'wind blows food' logic in last commit.
+
+Fix: added 'wind blows food'.
+
+#########
+# Step 71
+
+Code affected: Pig
+
+Flaw: missing food eaten counter.
+
+Fix: added 'eaten' counter.
+
+#########
+# Step 72
+
+Code affected: Pig.move
+
+Flaw: pig should move toward food.
+
+Fix: made pig move toward food if there is any.
+
+#########
+# Step 73
+
+Code affected: Pig.digest
+
+Flaw: eaten counter should decrement once digest.
+
+Fix: decremented eaten counter after digest.
+
+#########
+# Step 74
+
+Code affected: Chicken.move, Chicken.digest
+
+Flaw: pig should move toward food & eaten counter should decrement once digest.
+
+Fix: copied the logic of 'Pig.move' into 'Chicken.move'.
+
+#########
+# Step 75
+
+Code affected: Human.move
+
+Flaw: human should check if any egg under feet first.
+
+Fix: determined to check egg at the beginning of turn.
+
+#########
+# Step 76
+
+Code affected: Human.move
+
+Flaw: redundant if-condition statement.
+
+Fix: removed the redundant if-condition statement.
+
+#########
+# Step 77
+
+Code affected: Main.start
+
+Flaw: unused time variable.
+
+Fix: removed the unused time variable.
+
+#########
+# Step 78
+
+Code affected: Main
+
+Flaw: bad visibility modifiers for fields.
+
+Fix: narrowed down all bad visibility modifiers.
+
+#########
+# Step 79
+
+Code affected: Main, AnimalFood, AnimalManure, Chicken, Creature, Egg, Human, Pig
+
+Flaw: inappropriate capsulation of grid width and height into items.
+
+Fix: passed grid width and height in items' draw functions.
+
+#########
+# Step 80
+
+Code affected: Main, AnimalFood, AnimalManure, Chicken, Creature, Egg, Human, Pig
+
+Flaw: residual farm 2D array.
+
+Fix: Got rid of farm 2D array everywhere.
+
+#########
+# Step 81
+
+Code affected: AnimalFood.move, Chicken.move, Human.move, Pig.move, Creature.moveUp, .moveDown, moveLeft, moveRight
+
+Flaw: duplicate code of indices boundary check while 'move'.
+
+Fix: made move functions in 'Creature' to be inherited.
+
+#########
+# Step 82
+
+Code affected: Chicken.move, Human.move, Pig.move, Creature.moveUp, .moveDown, .moveLeft, .moveRight
+
+Flaw: duplicate code while 'move' toward certain target.
+
+Fix: created 'moveToward' function in 'Creature' to be inherited.
+
+#########
+# Step 83
+
+Code affected: Chicken.move, Human.move, Pig.move, Creature.moveRandomly
+
+Flaw: duplicate code while 'move' randomly.
+
+Fix: created 'moveRandomly' function in 'Creature' to be inherited.
+
+#########
+# Step 84
+
+Code affected: Creature.turnAround, Human.move
+
+Flaw: redundant method.
+
+Fix: remove redundant method.
+
+#########
+# Step 85
+
+Code affected: Chicken, Creature, Human, Pig
+
+Flaw: incorrect direction initialization.
+
+Fix: made move direction consistent with appearance.
+
+#########
+# Step 86
+
+Code affected: Creature, StillObject
+
+Flaw: still object needs to be abstracted from 'Creature'.
+
+Fix: created new class 'StillObject'.
+
+#########
+# Step 87
+
+Code affected: Creature
+
+Flaw: appearance found inconsistent with move direction.
+
+Fix: aligned appearance with move direction.
+
+#########
+# Step 88
+
+Code affected: Egg
+
+Flaw: redundant getters of position.
+
+Fix: removed redundant getters of position.
+
+#########
+# Step 89
+
+Code affected: Human.move
+
+Flaw: using of already-removed getters of 'Egg'.
+
+Fix: corrected related statements.
+
+#########
+# Step 90
+
+Code affected: Creature.moveToward
+
+Flaw: cannot reach the target position in some cases.
+
+Fix: corrected the buggy code.
+
+#########
+# Step 91
+
+Code affected: Human
+
+Flaw: bad appearance of 'Human'.
+
+Fix: used 'H' instead.
+
+#########
+# Step 92
+
+Code affected: AnimalManure, Egg
+
+Flaw: bad inheritance relationships.
+
+Fix: 'AnimalManure' and 'Egg' inherited from 'StillObject'.
+
+#########
+# Step 93
+
+Code affected: AnimalManure, Chicken, Human, MovingObject, Pig
+
+Flaw: inappropriate name of 'Creature' class.
+
+Fix: renamed 'Creature' to 'MovingObject'.
+
+#########
+# Step 94
+
+Code affected: AnimalManure, Chicken.digest, Pig.digest
+
+Flaw: unused arguments for constructor of 'AnimalManure'.
+
+Fix: removed unused arguments.
+
+#########
+# Step 95
+
+Code affected: Egg, Chicken.layEgg
+
+Flaw: unused arguments for constructor of 'Egg'.
+
+Fix: removed unused arguments.
+
+#########
+# Step 96
+
+Code affected: MovingObject, StillObject
+
+Flaw: inappropriate access modifiers of fields and methods.
+
+Fix: corrected inappropriate access modifiers.
+
+#########
+# Step 97
+
+Code affected: Wind.windBlowingUp, .windBlowingLeft
+
+Flaw: unnecessary complex code for direction setup.
+
+Fix: simplified unnecessary complex code.
+
+#########
+# Step 98
+
+Code affected: Human.draw
+
+Flaw: corner display of basket is incompatible with situation of more than one human.
+
+Fix: attached the display of basket to it's owner.
+
+#########
+# Step 99
+
+Code affected: All files
+
+Flaw: missing/inappropriate comments and javadoc.
+
+Fix: Added/Fixed comments and Finalized Javadoc.
+
+#########
+# Step 100
+
+Code affected: Main, BungBeetle
+
+Flaw: None.
+
+Fix: Added new item 'BungBeetle' into farm.
